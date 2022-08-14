@@ -39,8 +39,14 @@
 }
 
 .project, .clients, .team, .info, .feature {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .project, .clients, .team, .info, .feature {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .switch-footer__link, .footer__phone, .footer__mail, .footer__link, .project-product__link, .clients__link, .team-socials__link, .nav__link, .header-contacts__link, .nav__logo,
@@ -609,33 +615,8 @@ img {
   background-color: var(--btn-bg-cl);
 }
 
-.feature__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-preferred-size: 270px;
-      flex-basis: 270px;
-  gap: 30px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .feature__thumb {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 270px;
-  height: 120px;
-  background-color: var(--light-bg-cl);
-  border-radius: 4px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 30px;
+  display: none;
 }
 
 .feature__title {
@@ -644,7 +625,18 @@ img {
   line-height: 1.1428571429;
   text-transform: uppercase;
   color: var(--main-txt-cl);
+  text-align: center;
   margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .feature__title {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .feature__title {
+    text-align: left;
+  }
 }
 
 .feature__descr {
