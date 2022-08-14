@@ -1,0 +1,34 @@
+.clients {
+  @extend %section;
+}
+
+.clients__list {
+  @extend %reset-list;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.clients__link {
+  @extend %reset-link;
+  display: flex;
+  width: 170px;
+  height: 92px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--icon-bg-cl);
+  border-radius: 4px;
+  color: var(--icon-bg-cl);
+
+  transition: color 250ms var(--timing-fuction), border-color 250ms var(--timing-fuction);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-bg-cl);
+    border-color: var(--accent-bg-cl);
+  }
+}
+
+.clients__icon {
+  fill: currentColor;
+}

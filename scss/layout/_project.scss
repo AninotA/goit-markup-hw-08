@@ -1,0 +1,123 @@
+.project {
+  @extend %section;
+}
+
+.project-filters__list {
+  @extend %reset-list;
+
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 50px;
+}
+
+.project-filters__btn {
+  padding: 6px 22px;
+  background-color: var(--light-bg-cl);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  letter-spacing: 0.03em;
+  color: var(--main-txt-cl);
+  border: none;
+
+  transition: background-color 250ms var(--timing-fuction), color 250ms var(--timing-fuction),
+    box-shadow 250ms var(--timing-fuction);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-bg-cl);
+    color: var(--white-txt-cl);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.project-filters__current-btn {
+  background-color: var(--accent-bg-cl);
+  color: var(--white-txt-cl);
+}
+
+.project-product__list {
+  @extend %reset-list;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.project-product__item {
+  flex-basis: calc((100% - 60px) / 3);
+}
+
+.project-product__img {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-product__overlay {
+  content: '';
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--overlay-bg-cl);
+
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 250ms var(--timing-fuction), opacity 250ms var(--timing-fuction);
+
+  .project-product__link:hover &,
+  .project-product__link:focus & {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.project-product__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(28 / 18);
+  color: var(--white-txt-cl);
+
+  padding: 63px 24px;
+}
+
+.project-product__name {
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  border: 1px solid var(--border-card-cl);
+}
+
+.project-product__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+  color: var(--main-txt-cl);
+  margin-bottom: 4px;
+}
+
+.project-product__descr {
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  color: var(--descr-txt-cl);
+}
+
+.project-product__link {
+  @extend %reset-link;
+  
+  display: block;
+
+  transition: box-shadow 250ms var(--timing-fuction);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
