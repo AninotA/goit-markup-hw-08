@@ -59,12 +59,11 @@
     fill: currentColor;
 }
 
-.menu__list:first-child {
-    justify-content: flex-start;
-}
+
 
 .menu__list {
     @extend %reset-list;
+    
 }
 
 .menu__link {

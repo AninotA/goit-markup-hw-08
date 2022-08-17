@@ -491,12 +491,6 @@ img {
   fill: currentColor;
 }
 
-.menu__list:first-child {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
 .header {
   border-bottom: 1px solid var(--border-head-cl);
 }
