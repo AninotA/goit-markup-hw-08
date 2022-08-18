@@ -49,9 +49,8 @@
   }
 }
 
-.switch-footer__link, .footer__phone, .footer__mail, .footer__link, .project-product__link, .clients__link, .team-socials__link, .nav__link, .header-contacts__link, .mobile__link,
-.mobile-contacts__link,
-.mobile-socials__link, .nav__logo,
+.switch-footer__link, .footer__phone, .footer__mail, .footer__link, .project-product__link, .clients__link, .team-socials__link, .nav__link, .header-contacts__link, .mobile-socials__link, .mobile-contacts__link-tel,
+.mobile-contacts__link-mail, .mobile__link, .nav__logo,
 .footer__logo,
 .web {
   text-decoration: none;
@@ -494,6 +493,8 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  font-weight: 500;
+  letter-spacing: 0.02em;
 }
 
 .mobile__list:first-child {
@@ -501,6 +502,36 @@ img {
 }
 .mobile__list:nth-child(2) {
   margin-bottom: 64px;
+}
+
+.mobile__link {
+  font-size: 40px;
+  line-height: 1.175;
+}
+.mobile__link--current {
+  color: var(--accent-txt-cl);
+}
+
+.mobile-contacts__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-contacts__link-tel {
+  font-size: 34px;
+  line-height: 1.1764705882;
+  color: var(--accent-txt-cl);
+}
+
+.mobile-contacts__link-mail {
+  font-size: 24px;
+  line-height: 1.1666666667;
+  color: var(--descr-txt-cl);
+}
+
+.mobile-socials__link {
+  font-size: 18px;
+  line-height: 1.2222222222;
+  color: var(--accent-txt-cl);
 }
 
 .mobile-socials__list {
