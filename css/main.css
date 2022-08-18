@@ -49,14 +49,16 @@
   }
 }
 
-.switch-footer__link, .footer__phone, .footer__mail, .footer__link, .project-product__link, .clients__link, .team-socials__link, .nav__link, .header-contacts__link, .menu__link, .nav__logo,
+.switch-footer__link, .footer__phone, .footer__mail, .footer__link, .project-product__link, .clients__link, .team-socials__link, .nav__link, .header-contacts__link, .mobile__link,
+.mobile-contacts__link,
+.mobile-socials__link, .nav__logo,
 .footer__logo,
 .web {
   text-decoration: none;
   color: currentColor;
 }
 
-.switch-footer__list, .footer__list, .project-product__list, .project-filters__list, .clients__list, .team-socials, .team__list, .info__list, .feature__list, .nav__list, .header-contacts, .menu__list {
+.switch-footer__list, .footer__list, .project-product__list, .project-filters__list, .clients__list, .team-socials, .team__list, .info__list, .feature__list, .nav__list, .header-contacts, .mobile-socials__list, .mobile__list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -458,13 +460,6 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
   background-color: var(--white-bg-cl);
   z-index: 100;
   padding: 48px 40px;
@@ -489,6 +484,40 @@ img {
 
 .menu-close__icon {
   fill: currentColor;
+}
+
+.mobile__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mobile__list:first-child {
+  margin-bottom: auto;
+}
+.mobile__list:nth-child(2) {
+  margin-bottom: 64px;
+}
+
+.mobile-socials__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+}
+
+.mobile-socials__item:not(:last-child) .mobile-socials__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .header {
