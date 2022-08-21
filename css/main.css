@@ -38,12 +38,12 @@
   overflow: hidden;
 }
 
-.project, .clients, .team, .info, .feature {
+.project, .clients, .team, .feature {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
-  .project, .clients, .team, .info, .feature {
+  .project, .clients, .team, .feature {
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -89,6 +89,10 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .btn {
@@ -156,11 +160,18 @@ img {
 }
 .title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.1666666667;
+  font-size: 28px;
+  line-height: 1.1785714286;
   color: var(--main-txt-cl);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .title {
+    font-size: 36px;
+    line-height: 1.1666666667;
+    margin-bottom: 50px;
+  }
 }
 
 .backdrop {
@@ -919,7 +930,13 @@ img {
 }
 
 .info {
-  padding-top: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 1199px) {
+  .info__title {
+    display: none;
+  }
 }
 
 .info__list {
@@ -928,6 +945,11 @@ img {
   display: flex;
   gap: 30px;
   padding-top: 0;
+}
+@media screen and (max-width: 1199px) {
+  .info__list {
+    display: none;
+  }
 }
 
 .info__item {
@@ -957,6 +979,11 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media screen and (max-width: 1199px) {
+  .info__text {
+    display: none;
+  }
+}
 
 .team {
   background-color: var(--light-bg-cl);
@@ -966,6 +993,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 30px;
 }
 
@@ -974,6 +1003,20 @@ img {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  -ms-flex-preferred-size: calc((100% - 0px) / 1);
+      flex-basis: calc((100% - 0px) / 1);
+}
+@media screen and (min-width: 768px) {
+  .team__card {
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__card {
+    -ms-flex-preferred-size: calc((100% - 90px) / 4);
+        flex-basis: calc((100% - 90px) / 4);
+  }
 }
 
 .team__name {

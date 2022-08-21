@@ -130,7 +130,7 @@
         </div>
       </section>
 
-      <!-- <section class="info">
+       <section class="info">
         <div class="container info__container">
           <h2 class="info__title title">Чем мы занимаемся</h2>
 
@@ -164,17 +164,27 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
-      <!-- <section class="team">
+      <section class="team">
         <div class="container team__container">
           <h2 class="team__title title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__card">
               <img
-                src="./images/team/imgigor.jpg"
+                srcset="
+                  ./images/team/ihor-270.jpg 270w,
+                  ./images/team/ihor-354.jpg 354w,
+                  ./images/team/ihor-450.jpg 450w,
+                  ./images/team/ihor-540.jpg 540w,
+                  ./images/team/ihor-708.jpg 708w,
+                  ./images/team/ihor-900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"                
+                src="./images/team/ihor-270.jpg"
                 alt="Игорь Демьяненко дизайнер"
-                width="270"
+                width="450"
+                height="460"
                 class="team__avatar"
               />
               <div class="team__name">
@@ -238,9 +248,19 @@
             </li>
             <li class="team__card">
               <img
-                src="./images/team/img.jpg"
+              srcset="
+              ./images/team/olga-270.jpg 270w,
+              ./images/team/olga-354.jpg 354w,
+              ./images/team/olga-450.jpg 450w,
+              ./images/team/olga-540.jpg 540w,
+              ./images/team/olga-708.jpg 708w,
+              ./images/team/olga-900.jpg 900w
+            "
+            sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"                
+            src="./images/team/olga-270.jpg"
                 alt="Ольга Репина фронтенд разработчик"
-                width="270"
+                width="450"
+                height="460"
                 class="team__avatar"
               />
               <div class="team__name">
@@ -304,9 +324,19 @@
             </li>
             <li class="team__card">
               <img
-                src="./images/team/imgnikolas.jpg"
+              srcset="
+              ./images/team/nicolas-270.jpg 270w,
+              ./images/team/nicolas-354.jpg 354w,
+              ./images/team/nicolas-450.jpg 450w,
+              ./images/team/nicolas-540.jpg 540w,
+              ./images/team/nicolas-708.jpg 708w,
+              ./images/team/nicolas-900.jpg 900w
+            "
+            sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"                
+            src="./images/team/nicolas-270.jpg"
                 alt="Николай Тарасов маркетолог"
-                width="270"
+                width="450"
+                height="460"
                 class="team__avatar"
               />
               <div class="team__name">
@@ -370,9 +400,19 @@
             </li>
             <li class="team__card">
               <img
-                src="./images/team/imgmihail.jpg"
+              srcset="
+              ./images/team/michael-270.jpg 270w,
+              ./images/team/michael-354.jpg 354w,
+              ./images/team/michael-450.jpg 450w,
+              ./images/team/michael-540.jpg 540w,
+              ./images/team/michael-708.jpg 708w,
+              ./images/team/michael-900.jpg 900w
+            "
+            sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"                
+            src="./images/team/michael-270.jpg"
                 alt="Михаил Ермаков UI-дизайнер"
-                width="270"
+                width="450"
+                height="460"
                 class="team__avatar"
               />
               <div class="team__name">
@@ -436,7 +476,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- <section class="clients">
         <div class="container clients__conteiner">
           <h2 class="clients__title title">Постоянные клиенты</h2>
@@ -692,7 +732,7 @@
 
     <!-- Mobile menu -->
 
-    <div class="menu is-open" data-menu>
+    <!-- <div class="menu is-open" data-menu>
       <button class="menu-close__btn" data-menu-close>
         <svg class="menu-close__icon" width="40" height="40">
           <use href="./images/icons.svg#menu-close"></use>
@@ -765,7 +805,7 @@
           </li>
         </ul>
       </div>
-    </div>
+    </div> -->
 
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
