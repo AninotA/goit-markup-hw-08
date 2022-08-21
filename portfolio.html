@@ -25,18 +25,18 @@
   </head>
 
   <body data-page>
-    <header class="header">
-      <div class="container header__container">
+    <!-- <header class="header"> -->
+      <!-- <div class="container header__container">
         <a class="nav__logo" href="./index.html"><span class="web">Web</span>Studio</a>
 
         <button class="menu-btn" type="button" data-menu-open>
           <svg width="40" height="40">
             <use href="./images/icons.svg#burger-menu"></use>
           </svg>
-        </button>
-        <nav class="nav">
+        </button> -->
+        <!-- <nav class="nav"> -->
           <!-- <a class="nav__logo" href="./index.html"><span class="web">Web</span>Studio</a> -->
-
+<!-- 
           <ul class="nav__list">
             <li class="nav__item">
               <a class="nav__link" href="./index.html">Студия</a>
@@ -48,9 +48,9 @@
               <a class="nav__link" href="/">Контакты</a>
             </li>
           </ul>
-        </nav>
+        </nav> -->
 
-        <ul class="header-contacts">
+        <!-- <ul class="header-contacts">
           <li class="header-contacts__item">
             <a class="header-contacts__mail header-contacts__link" href="mailto:info@devstudio.com"
               ><svg class="header-contacts__icon-mail header-contacts__icon">
@@ -67,14 +67,14 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header> -->
 
     <main>
       <section class="project">
         <div class="container">
           <!--Скрытый заголовок-->
           <h1 class="visually-hidden">Проекты</h1>
-          <ul class="project-filters__list">
+          <!-- <ul class="project-filters__list">
             <li class="project-filters__item">
               <button type="button" class="project-filters__btn btn project-filters__current-btn">Все</button>
             </li>
@@ -90,19 +90,23 @@
             <li class="filters-item">
               <button type="button" class="project-filters__btn btn">Маркетинг</button>
             </li>
-          </ul>
+          </ul> -->
 
           <ul class="project-product__list">
             <li class="project-product__item">
               <a href="./portfolio.html" class="project-product__link">
                 <div class="project-product__img">
-                  <img
+                  <picture>
+                    <source media="(min-width: )" srcset="" type="image/">
+                    <img
                     src="./images/portfolio/imgtechnokryak.jpg"
                     alt="три фото людей с команды на сайте"
                     width="370"
                     height="294"
                     class="img"
                   />
+                  </picture>
+                 
                   <div class="project-product__overlay">
                     <p class="project-product__text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -314,7 +318,7 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer__container">
         <div class="footer__part">
           <a class="footer__logo" href="./index.html"><span class="web">Web</span>Studio</a>
@@ -411,10 +415,10 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
  <!-- Mobile menu -->
-    <div class="menu is-open" data-menu>
+    <!-- <div class="menu is-open" data-menu>
       <button class="menu-close__btn" data-menu-close>
         <svg class="menu-close__icon" width="40" height="40">
           <use href="./images/icons.svg#menu-close"></use>
@@ -487,7 +491,7 @@
           </li>
         </ul>
       </div>
-    </div>
+    </div> -->
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
   </body>
