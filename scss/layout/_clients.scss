@@ -5,6 +5,7 @@
 .clients__list {
   @extend %reset-list;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 30px;
 }
@@ -12,7 +13,7 @@
 .clients__link {
   @extend %reset-link;
   display: flex;
-  width: 170px;
+  width: 210px;
   height: 92px;
   justify-content: center;
   align-items: center;
@@ -26,6 +27,14 @@
   &:focus {
     color: var(--accent-bg-cl);
     border-color: var(--accent-bg-cl);
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 170px;
   }
 }
 
