@@ -55,7 +55,7 @@
   text-transform: uppercase;
   color: var(--white-txt-cl);
 
-  width: 360px;
+  max-width: 360px;
   margin: 0 auto;
   text-align: center;
   margin-bottom: 30px;
@@ -83,5 +83,9 @@
   &:hover,
   &:focus {
     background-color: var(--btn-bg-cl);
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-width: 200px;
   }
 }
