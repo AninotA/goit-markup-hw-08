@@ -536,6 +536,9 @@ img {
 .menu-btn:hover, .menu-btn:focus {
   color: var(--accent-bg-cl);
 }
+.menu-btn__icon {
+  fill: currentColor;
+}
 
 @media screen and (min-width: 768px) {
   .menu-btn {
