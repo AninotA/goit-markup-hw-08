@@ -216,6 +216,11 @@ img {
   transition: transform 250ms var(--timing-fuction);
   transition: transform 250ms var(--timing-fuction), -webkit-transform 250ms var(--timing-fuction);
 }
+@media screen and (max-width: 450px) {
+  .modal {
+    width: 100vw;
+  }
+}
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
@@ -1031,7 +1036,6 @@ img {
 }
 
 .feature__descr {
-  height: 50px;
   line-height: 24px;
   color: var(--descr-txt-cl);
 }
@@ -1043,6 +1047,11 @@ img {
 
 .info {
   padding: 0;
+}
+@media screen and (min-width: 1200px) {
+  .info {
+    padding-bottom: 94px;
+  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -1194,6 +1203,9 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1292,6 +1304,7 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 100%;
   gap: 30px;
 }
 
@@ -1313,6 +1326,10 @@ img {
 }
 
 .project-product__link {
+  -webkit-transition: -webkit-box-shadow 250ms var(--timing-fuction);
+  transition: -webkit-box-shadow 250ms var(--timing-fuction);
+  transition: box-shadow 250ms var(--timing-fuction);
+  transition: box-shadow 250ms var(--timing-fuction), -webkit-box-shadow 250ms var(--timing-fuction);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1322,6 +1339,10 @@ img {
           flex-direction: column;
   width: 100%;
   height: 100%;
+}
+.project-product__link:hover, .project-product__link:focus {
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .project-product__link > .project-product__name {
   -webkit-box-flex: 1;
@@ -1385,18 +1406,6 @@ img {
   font-size: 16px;
   line-height: 1.875;
   color: var(--descr-txt-cl);
-}
-
-.project-product__link {
-  display: block;
-  -webkit-transition: -webkit-box-shadow 250ms var(--timing-fuction);
-  transition: -webkit-box-shadow 250ms var(--timing-fuction);
-  transition: box-shadow 250ms var(--timing-fuction);
-  transition: box-shadow 250ms var(--timing-fuction), -webkit-box-shadow 250ms var(--timing-fuction);
-}
-.project-product__link:hover, .project-product__link:focus {
-  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .footer__container {
