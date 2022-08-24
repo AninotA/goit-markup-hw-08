@@ -1257,10 +1257,11 @@ img {
       flex-wrap: wrap;
   gap: 8px;
   row-gap: 15px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 @media screen and (min-width: 768px) {
   .project-filters__list {
+    margin-bottom: 30px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1422,19 +1423,15 @@ img {
 }
 @media screen and (min-width: 768px) {
   .footer__container {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer__container {
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
     text-align: start;
     gap: 70px;
   }
